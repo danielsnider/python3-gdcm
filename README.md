@@ -28,21 +28,22 @@ python3-gdcm wrapper
 
 # INSTALLATION FROM .deb
 
-```sudo apt-get install python3.7-dev libpython3.7-dev
-virtualenv -p python3.7 python3.7venv
-cd python3.7venv/
-ls
-. bin/activate
+`sudo apt-get install python3.7-dev libpython3.7-dev`
 
-git clone --branch master https://github.com/HealthplusAI/python3-gdcm.git && cd python3-gdcm && dpkg -i build_1-1_amd64.deb && apt-get install -f
+`virtualenv -p python3.7 python3.7venv`
 
-cp /usr/local/lib/gdcm.py /usr/local/lib/python3.7/site-packages/.
+`cd python3.7venv/`
 
-cp /usr/local/lib/gdcmswig.py /usr/local/lib/python3.7/site-packages/.
+`. bin/activate`
 
-cp /usr/local/lib/_gdcmswig.so /usr/local/lib/python3.7/site-packages/.
+`git clone --branch master https://github.com/HealthplusAI/python3-gdcm.git && cd python3-gdcm && dpkg -i build_1-1_amd64.deb && apt-get install -f`
 
-cp /usr/local/lib/libgdcm* /usr/local/lib/python3.7/site-packages/.
+`cp /usr/local/lib/gdcm.py /usr/local/lib/python3.7/site-packages/.`
 
-ldconfig
-```
+`cp /usr/local/lib/gdcmswig.py /usr/local/lib/python3.7/site-packages/.`
+
+`cp /usr/local/lib/_gdcmswig.so /usr/local/lib/python3.7/site-packages/.`
+
+`cp /usr/local/lib/libgdcm* /usr/local/lib/python3.7/site-packages/.`
+
+`ldconfig`
